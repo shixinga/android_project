@@ -1,0 +1,19 @@
+package com.example.tt;
+
+import android.support.v4.app.Fragment;
+
+public class FragmentFactory {
+
+	public static Fragment getFragmentByPosition(int position) {
+		Fragment fragment = null;
+		if(position == 0) {
+			fragment = new HomeFragment();
+		} else if(position == 1) {
+			fragment = new PlanetFragment();
+		} else if(position == 2) {
+			fragment = new HomeFragment();
+		} else {
+			fragment = new HomeFragment();
+		}
+	}
+}

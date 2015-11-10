@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:layout_gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff00ff00"
+        android:text="主界面啊"
+        />
+    
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="诶我的无奈多尔我姐夫都而无i降低哦我及偶尔我都为降低 "
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+    <GridView
+        android:id="@+id/gv_show"
+        android:numColumns="3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+</LinearLayout>

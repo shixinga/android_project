@@ -1,0 +1,6 @@
+1438742645078	Rename type 'SettingV'
+1438742740441	Copy file
+1438743068830	Rename resource 'setting_view_item.xml'
+1438748912170	Convert local variable 'title' to field
+1438748914974	Convert local variable 'desc_on' to field
+1438748924067	Convert local variable 'desc_off' to field

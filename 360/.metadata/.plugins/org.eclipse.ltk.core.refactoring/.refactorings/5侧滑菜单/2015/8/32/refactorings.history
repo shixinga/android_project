@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;5侧滑菜单/src/com.safe.view&apos;&#x0D;&#x0A;- Original project: &apos;5侧滑菜单&apos;&#x0D;&#x0A;- Destination element: &apos;5侧滑菜单/src/com.safe.view&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.safe.slide.SlideMenu.java&#x0D;&#x0A;     com.safe.slide.ScrollAnimation.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="/src&lt;com.safe.view" element1="/src&lt;com.safe.slide{SlideMenu.java" element2="/src&lt;com.safe.slide{ScrollAnimation.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1438679888373" units="2" version="1.0"/>
+</session>

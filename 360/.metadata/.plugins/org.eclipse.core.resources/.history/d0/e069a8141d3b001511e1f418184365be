@@ -1,0 +1,31 @@
+package com.safe.setting.view;
+
+import com.safe.setting.R;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.View;
+import android.widget.RelativeLayout;
+
+public class SettingView extends RelativeLayout{
+
+	public SettingView(Context context, AttributeSet attrs, int defStyle) {
+		super(context, attrs, defStyle);
+		init();
+	}
+
+	public SettingView(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		init();
+	}
+
+	public SettingView(Context context) {
+		super(context);
+		init();
+	}
+
+	private void init() {
+		View.inflate(getContext(), R.layout.update_item, this);
+	}
+	
+}

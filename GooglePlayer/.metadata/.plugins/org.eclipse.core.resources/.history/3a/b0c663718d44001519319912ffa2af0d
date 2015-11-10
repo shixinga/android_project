@@ -1,0 +1,10 @@
+package com.example.tt;
+
+import android.support.v4.app.Fragment;
+
+public class FragmentFactory {
+
+	public static Fragment getFragmentByPosition(int position) {
+		
+	}
+}

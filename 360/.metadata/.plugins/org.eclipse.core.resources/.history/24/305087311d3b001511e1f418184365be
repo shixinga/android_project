@@ -1,0 +1,33 @@
+package com.safe.setting.view;
+
+import com.safe.setting.R;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.View;
+import android.widget.RelativeLayout;
+
+public class SettingView extends RelativeLayout{
+
+	public SettingView(Context context, AttributeSet attrs, int defStyle) {
+		super(context, attrs, defStyle);
+		init();
+	}
+
+	public SettingView(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		init();
+	}
+
+	public SettingView(Context context) {
+		super(context);
+		init();
+	}
+
+	private void init() {
+		//第3个参数设置的是 被布局文件填充成的View的父组件（即把该View放在父组件里）
+		//这里的父组件是this，即是这个自定义组件
+		View.inflate(getContext(), R.layout.update_item, this);
+	}
+	
+}

@@ -1,0 +1,11 @@
+package com.example.applicationexit;
+
+import android.support.v7.app.ActionBarActivity;
+/**
+ * 抽取BaseActivity   管理所有activity 方便退出
+ * @author Administrator
+ *
+ */
+public class BaseActivity extends ActionBarActivity {
+
+}

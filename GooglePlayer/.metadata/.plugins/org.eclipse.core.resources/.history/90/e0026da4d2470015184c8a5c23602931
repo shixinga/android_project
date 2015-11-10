@@ -1,0 +1,36 @@
+package com.example.first.application;
+
+import android.app.Application;
+import android.content.Context;
+import android.os.Handler;
+/**
+ * 代表当前应用程序
+ * @author haha
+ * 该类用在UiUtils.java中，主要是获取该应用的resource
+ *remember：在AndroidManifest.xml里面的application标签里加android:name="com.example.applicationexit.BaseApplication"
+ *
+ */
+public class BaseApplication extends Application {
+	private static BaseApplication application;
+	private static int mainTid;
+	private static Handler handler;
+	@Override
+//  在主线程运行的
+	public void onCreate() {
+		super.onCreate();
+		application=this;
+		mainTid = android.os.Process.myTid();
+		handler=new Handler();
+	}
+	public static Context getApplication() {
+		return application;
+	}
+	public static int getMainTid() {
+		return mainTid;
+	}
+	public static Handler getHandler() {
+		return handler;
+	}
+	
+	
+}

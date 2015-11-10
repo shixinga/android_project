@@ -1,0 +1,79 @@
+package com.example.tt;
+
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+public class HomeFragment extends Fragment{
+
+	// When requested, this adapter returns a DemoObjectFragment,
+    // representing an object in the collection.
+    DemoCollectionPagerAdapter mDemoCollectionPagerAdapter;
+    ViewPager mViewPager;
+	@Override
+	public View onCreateView(LayoutInflater inflater,
+			@Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+		View view = inflater.inflate(R.layout.fragment_home, container, false);
+		// ViewPager and its adapters use support library
+        // fragments, so use getSupportFragmentManager.
+        mDemoCollectionPagerAdapter =
+                new DemoCollectionPagerAdapter(
+                        getSupportFragmentManager());
+        mViewPager = (ViewPager) findViewById(R.id.pager);
+        mViewPager.setAdapter(mDemoCollectionPagerAdapter);
+		return view;
+	}
+
+	class DemoCollectionPagerAdapter extends FragmentStatePagerAdapter {
+	    public DemoCollectionPagerAdapter(FragmentManager fm) {
+	        super(fm);
+	    }
+
+	    @Override
+	    public Fragment getItem(int i) {
+	        Fragment fragment = new DemoObjectFragment();
+	        //传递data给Fragment
+	        Bundle args = new Bundle();
+	        // Our object is just an integer :-P
+	        args.putInt(DemoObjectFragment.ARG_OBJECT, i + 1);
+	        fragment.setArguments(args);
+	        return fragment;
+	    }
+
+	    @Override
+	    public int getCount() {
+	        return 8;
+	    }
+
+	    
+	    @Override
+	    public CharSequence getPageTitle(int position) {
+	        return "OBJECT " + (position + 1);
+	    }
+	}
+	
+	class DemoObjectFragment extends Fragment {
+	    public static final String ARG_OBJECT = "object";
+
+	    @Override
+	    public View onCreateView(LayoutInflater inflater,
+	            ViewGroup container, Bundle savedInstanceState) {
+	        // The last two arguments ensure LayoutParams are inflated
+	        // properly.
+	        View rootView = inflater.inflate(
+	                R.layout.fragment_collection_object, container, false);
+	        //注意这里是从MainActivity里面获取的Bundle，而不是参数savedInstanceState！！！！
+	        Bundle args = getArguments();
+	        TextView tv_fragment = (TextView) rootView.findViewById(R.id.tv_fragment);
+	        tv_fragment.setText(args.getInt(ARG_OBJECT) + "fed");
+	        return rootView;
+	    }
+	}
+}

@@ -1,0 +1,12 @@
+1438574730429	Rename package 'com.safe.one'
+1438574870667	Copy file
+1438575414393	Extract local variable 'string'
+1438575622875	Rename method 'getAppVersionCode'
+1438575998617	Rename package 'com.example.httpclient_get_post.util'
+1438576252211	Convert local variable 'msg' to field
+1438576428054	Rename field 'Access_NETWORK_SUCCESS'
+1438576438856	Rename field 'Access_NETWORK_FAILED'
+1438577453454	Rename method 'getAppVersionName'
+1438577464457	Rename method 'getAppVersionCode'
+1438584692591	Extract method 'loadMainActivity'
+1438586499565	Rename local variable 'mPd'

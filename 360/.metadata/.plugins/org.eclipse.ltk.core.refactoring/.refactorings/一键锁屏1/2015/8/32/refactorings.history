@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DeviceAdminSample.java&apos; to &apos;8一键锁屏/src/com.safe.lock&apos;&#x0D;&#x0A;- Original project: &apos;一键锁屏1&apos;&#x0D;&#x0A;- Destination element: &apos;8一键锁屏/src/com.safe.lock&apos;&#x0D;&#x0A;- Original element: &apos;com.lock.DeviceAdminSample.java&apos;" description="Copy compilation unit" destination="=8一键锁屏/src&lt;com.safe.lock" element1="/src&lt;com.lock{DeviceAdminSample.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1438765983569" units="1" version="1.0"/>
+</session>

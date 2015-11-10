@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.support.v4.app.FragmentManager"/>
+<fullyQualifiedTypeName name="android.support.v4.app.Fragment"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="android.support.v4.app.ActionBarDrawerToggle"/>
+<fullyQualifiedTypeName name="com.example.viewpagebeautifulgengxuan.R.string"/>
+<fullyQualifiedTypeName name="android.widget.ListView"/>
+<fullyQualifiedTypeName name="android.widget.BaseAdapter"/>
+<fullyQualifiedTypeName name="org.apache.http.HttpException"/>
+<fullyQualifiedTypeName name="org.apache.http.HttpRequest"/>
+<fullyQualifiedTypeName name="com.lidroid.xutils.exception.HttpException"/>
+<fullyQualifiedTypeName name="com.lidroid.xutils.http.client.HttpRequest"/>
+<fullyQualifiedTypeName name="com.example.listviewbetter.network.BaseProtocol"/>
+<fullyQualifiedTypeName name="com.example.listviewbetter.MainActivity.AppAdapter"/>
+<fullyQualifiedTypeName name="com.example.listviewbetter.BitmapHelper"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+</qualifiedTypeNameHistroy>

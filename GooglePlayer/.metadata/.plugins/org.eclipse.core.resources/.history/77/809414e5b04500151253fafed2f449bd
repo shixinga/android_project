@@ -1,0 +1,36 @@
+package com.example.resultshow;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+
+// Instances of this class are fragments representing a single
+// object in our collection.
+public class DemoObjectFragment extends Fragment {
+    public static final String ARG_OBJECT = "object";
+
+    //加载状态
+    public static final int STATE_UNKOWN = 0;
+	public static final int STATE_LOADING = 1;
+	public static final int STATE_ERROR = 2;
+	public static final int STATE_EMPTY = 3;
+	public static final int STATE_SUCCESS = 4;
+	public static int state = STATE_UNKOWN;
+    @Override
+    public View onCreateView(LayoutInflater inflater,
+            ViewGroup container, Bundle savedInstanceState) {
+    	if (frameLayout == null) {  // 之前的frameLayout 已经记录了一个爹了  爹是之前的ViewPager 
+			frameLayout = new FrameLayout(getActivity());
+			init(); // 在FrameLayout中 添加4种不同的界面
+		}else{
+			ViewUtils.removeParent(frameLayout);// 移除frameLayout之前的爹
+		}
+		show();// 根据服务器的数据 切换状态
+		//  先干掉之前的爹 
+	
+		return frameLayout;  //  拿到当前viewPager 添加这个framelayout 
+    }
+}

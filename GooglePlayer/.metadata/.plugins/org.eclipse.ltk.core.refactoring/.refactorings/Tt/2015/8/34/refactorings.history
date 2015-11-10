@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.example.tt.FragmentUtils&apos; to &apos;FragmentFactory&apos;&#x0D;&#x0A;- Original project: &apos;Tt&apos;&#x0D;&#x0A;- Original element: &apos;com.example.tt.FragmentUtils&apos;&#x0D;&#x0A;- Renamed element: &apos;com.example.tt.FragmentFactory&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FragmentUtils&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.example.tt{FragmentUtils.java[FragmentUtils" matchStrategy="1" name="FragmentFactory" qualified="false" references="true" similarDeclarations="false" stamp="1439780856824" textual="false" version="1.0"/>
+</session>
